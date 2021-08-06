@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { title } = require('process');
 
 inquirer
     .prompt([
@@ -52,7 +53,31 @@ inquirer
     ])
     .then((response) => {
         fs.writeFile('README.md',
-            ``, (err) =>
+            `# ${response.title}
+            
+            ## Description
+            ${response.description}
+
+            ## Table of Contents
+            
+            ## Installation
+            ${response.installation}
+            
+            ## Usage
+            ${response.usage}
+            
+            ## License
+            ${response.license}
+            
+            ## Contributing
+            ${response.contributions}
+            
+            ## Tests
+            ${response.tests}
+            
+            ## Questions
+            Github: github.com/${response.username}
+            Email: ${response.email}`, (err) =>
             err ? console.error(err) : console.log('success'))
     }
     );
