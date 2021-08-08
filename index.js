@@ -51,7 +51,7 @@ inquirer
         }
     ])
     .then((response) => {
-        fs.writeFile('README.md',
+        fs.writeFile('./generated README/README.md',
             `# ${response.title}
             
             ## Description
