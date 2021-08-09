@@ -36,7 +36,7 @@ inquirer
         {
             type: 'list' ,
             message: 'Choose the license for your project.',
-            choices: ['Apache 2.0 License', 'GNU GPL v3', 'GNU GPL v2', 'GNU AGPL v3', 'GNU LGPL v3', 'GNU FDL v1.3', 'IBM Public License Version 1.0', 'ISC License (ISC)', 'The MIT License', 'Mozilla Public License 2.0'],
+            choices: ['Apache 2.0 License', 'Boost Software License 1.0', 'GNU GPL v3', 'GNU GPL v2', 'GNU AGPL v3', 'GNU LGPL v3', 'GNU FDL v1.3', 'IBM Public License Version 1.0', 'ISC License (ISC)', 'The MIT License', 'Mozilla Public License 2.0', 'The Unlicense'],
             name: 'license',
         },
         {
@@ -55,6 +55,8 @@ inquirer
 
         if (response.license == 'Apache 2.0 License') {
             licenseBadge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+        } else if (response.license == 'Boost Software License 1.0') {
+            licenseBadge = '[![License](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)';
         } else if (response.license == 'GNU GPL v3') {
             licenseBadge = '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)';
         } else if (response.license == 'GNU GPL v2') {
@@ -71,6 +73,8 @@ inquirer
             licenseBadge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
         } else if (response.license == 'Mozilla Public License 2.0') {
             licenseBadge = '[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)';
+        } else if (response.license == 'The Unlicense') {
+            licenseBadge = '[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)';
         }
 
         fs.writeFile('./generated README/README.md',
