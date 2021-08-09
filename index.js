@@ -109,7 +109,7 @@ ${response.contributions}
 ${response.tests}
             
 ## Questions
-Github: github.com/${response.username}
+Github: https://github.com/${response.username}
 
 Email: ${response.email}`, (err) =>
 err ? console.error(err) : console.log('README successfully generated'))
