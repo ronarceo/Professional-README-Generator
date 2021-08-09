@@ -100,7 +100,7 @@ ${response.installation}
 ${response.usage}
             
 ## License
-${response.license}
+Licensed under ${response.license}
             
 ## Contributing
 ${response.contributions}
