@@ -29,6 +29,6 @@ OpenWeather One Call API
 Search the name of any city to test if you are able to receive the information from the OpenWeather One Call API.
             
 ## Questions
-Github: github.com/ronarceo
+Github: https://github.com/ronarceo
 
 Email: ronaldmarceo@gmail.com
