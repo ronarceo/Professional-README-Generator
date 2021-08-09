@@ -24,3 +24,9 @@ License badges made with Shields.io.
 Github: https://github.com/ronarceo
 
 Email: ronaldmarceo@gmail.com
+
+## Screenshot
+![screenshot](images/screenshot.png)
+
+## Link to video showing how to use the app
+https://drive.google.com/file/d/1hEbcVYXGA33W5BH0X1jxnumgw20dIoyT/view
