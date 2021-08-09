@@ -35,7 +35,7 @@ inquirer
         },
         {
             type: 'list' ,
-            message: 'Choose your license',
+            message: 'Choose the license for your project.',
             choices: ['Apache 2.0 License', 'GNU GPL v3', 'GNU GPL v2', 'GNU AGPL v3', 'GNU LGPL v3', 'GNU FDL v1.3', 'IBM Public License Version 1.0', 'ISC License (ISC)', 'The MIT License', 'Mozilla Public License 2.0'],
             name: 'license',
         },
@@ -108,6 +108,6 @@ ${response.tests}
 Github: github.com/${response.username}
 
 Email: ${response.email}`, (err) =>
-err ? console.error(err) : console.log('README successfuly generated'))
+err ? console.error(err) : console.log('README successfully generated'))
     }
     );
